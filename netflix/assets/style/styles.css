@@ -1,59 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+:root {
+    --red: #E50914;
+    --black: #141414;
+    --white: #fff;
+}
+
 body {
-    font-family: Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
+    background: var(--black);
+    font-family: sans-serif, Helvetica;
+    color: var(--white);
 }
 
-.logo {
-    font-family: 'Bebas Neue', cursive;
-    color: #E50914;
-    font-size: 32px;
-    padding: 12px 7px 0 12px;
-}
-
-.container {
-    width: 100%;
+header .container {
     display: flex;
-    background-color: #000;
-    height: 60px;
-    
+    /* flex-direction: row; Padrão */
+    align-items: center; /*Alinha texto no centro do box*/
+    justify-content: space-between; /*Da um espaço padrão entre os elementos*/
+    background-image: linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
 }
 
-ul {
-    list-style: none;
-    padding: 5px 10px;
+header .logo {
+    color: var(--red);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    margin-left: 30px;
+
 }
 
-
-.indice {
-    display: inline-block;
-}
-
-.indice a {
-    color: #FFF;
+header nav a {
     text-decoration: none;
-    padding-right: 7px;
+    color: #AAA;
+    margin-right: 10px;
 }
 
-.menu-direita {
-    display: inline-flex;
-    margin: auto;
-}
-
-.avatar {
+header nav a:hover {
     color: #FFF;
-    padding: 5px;
 }
 
-.seta-baixo {
-    margin-left: 5px;
+.main-film {
+    background-image: url(../img/capa-house.jpg);
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-button {
-    color: #FFF;
-    font-size: 18px;
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
+.main-film .description {
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 20px;
 }
