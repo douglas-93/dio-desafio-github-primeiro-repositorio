@@ -4,6 +4,7 @@
     --red: #E50914;
     --black: #141414;
     --white: #fff;
+    --white-hover: #aaa;
 }
 
 body {
@@ -13,6 +14,8 @@ body {
 }
 
 header .container {
+    position: fixed;
+    width: 100%;
     display: flex;
     /* flex-direction: row; Padrão */
     align-items: center; /*Alinha texto no centro do box*/
@@ -23,29 +26,34 @@ header .container {
 header .logo {
     color: var(--red);
     font-family: 'Bebas Neue', cursive;
-    font-size: 40px;
-    margin-left: 30px;
+    font-size: 35px;
+    margin: 16px 50px;
+    
+}
 
+header nav.nav-left {
+    font-size: 14px;
 }
 
 header nav a {
     text-decoration: none;
-    color: #AAA;
+    color: var(--white);
     margin-right: 10px;
 }
 
 header nav a:hover {
-    color: #FFF;
+    color: var(--white-hover);
+    transition: 0.5s ease all;
 }
 
 .main-film {
     background-image: url(../img/capa-house.jpg);
     background-size: cover;
-    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    height: 900px;
 }
 
 .main-film .description {
@@ -59,5 +67,48 @@ header nav a:hover {
 }
 
 .description {
+    flex-wrap: wrap;
+    width: 25%;
     font-size: 20px;
+}
+
+.watch-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: var(--white);
+    padding: 15px 25px;
+
+    cursor: pointer;
+}
+
+.watch-btn:hover {
+    background-color: var(--white);
+    color: var(--black);
+    transition: 0.3s ease all;
+}
+
+.info-btn {
+
+}
+
+main .suggested-films {
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.suggest-title {
+    
+}
+
+.film-box {
+    margin: 10px 8px;
+    cursor: pointer;
+
+}
+
+.opaque-black {
+    background-color: var(--black);
+    transition: 0.8s ease all;
 }
