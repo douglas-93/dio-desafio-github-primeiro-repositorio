@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 :root {
-    --red: #E50914;
+    --red: #e50914;
     --black: #141414;
     --white: #fff;
     --white-hover: #aaa;
@@ -20,19 +20,50 @@ header .container {
     /* flex-direction: row; Padrão */
     align-items: center; /*Alinha texto no centro do box*/
     justify-content: space-between; /*Da um espaço padrão entre os elementos*/
-    background-image: linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.7) 10%,
+        rgba(0, 0, 0, 0)
+    );
 }
 
 header .logo {
     color: var(--red);
-    font-family: 'Bebas Neue', cursive;
+    font-family: "Bebas Neue", cursive;
     font-size: 35px;
     margin: 16px 50px;
-    
 }
 
 header nav.nav-left {
+    font-weight: 600;
     font-size: 14px;
+    margin-right: auto;
+}
+
+header nav.nav-right {
+    font-weight: 600;
+    font-size: 20px;
+    margin-right: 40px;
+}
+
+header nav.nav-right a {
+    margin: 0 10px;
+    justify-content: center;
+}
+
+header nav.nav-right a spam {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.fa-sort-down {
+    transition: all 0.4s ease;
+    transform: rotateZ(0);
+}
+
+.fa-sort-down:hover {
+    transition: all 0.4s ease;
+    transform: rotateZ(-180deg);
 }
 
 header nav a {
@@ -53,7 +84,15 @@ header nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    height: 900px;
+    height: 95vh;
+}
+
+main div.main-film div.container {
+    margin-left: 40px;
+}
+
+main div.main-film div.buttons {
+    margin-left: 40px;
 }
 
 .main-film .description {
@@ -68,27 +107,41 @@ header nav a:hover {
 
 .description {
     flex-wrap: wrap;
-    width: 25%;
+    width: 35%;
     font-size: 20px;
 }
 
 .watch-btn {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--white);
     border: none;
-    color: var(--white);
+    color: var(--black);
     padding: 15px 25px;
-
+    border-radius: 5px;
     cursor: pointer;
+    font-weight: 500;
+    font-size: 19px;
+    justify-content: center;
 }
 
 .watch-btn:hover {
-    background-color: var(--white);
-    color: var(--black);
+    background-color: rgba(255, 255, 255, 0.5);
     transition: 0.3s ease all;
 }
 
 .info-btn {
+    background-color: rgba(109, 109, 110, 0.7);
+    border: none;
+    color: var(--white);
+    padding: 15px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 19px;
+}
 
+.info-btn:hover {
+    background-color: rgba(109, 109, 110, 0.4);
+    transition: 0.3s ease all;
 }
 
 main .suggested-films {
@@ -99,13 +152,23 @@ main .suggested-films {
 }
 
 .suggest-title {
-    
 }
 
 .film-box {
     margin: 10px 8px;
     cursor: pointer;
+}
 
+.thumb {
+    border-radius: 5px;
+    transition: all 0.5 ease;
+}
+
+.thumb:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+    border-radius: 5px;
 }
 
 .opaque-black {
