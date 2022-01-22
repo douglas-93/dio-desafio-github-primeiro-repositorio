@@ -1,96 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix</title>
-    <link rel="stylesheet" href="assets/style/reset.css">
-    <link rel="stylesheet" href="assets/style/styles.css">
-    <link rel="stylesheet" href="assets/style/responsive.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h2 class="logo">NETFLIX</h2>
-            <nav class="nav-left">
-                <a href="#">Início</a>
-                <a href="#">Séries</a>
-                <a href="#">Filmes</a>
-                <a href="#">Bombando</a>
-                <a href="#">Minha Lista</a>
-            </nav>
-            <nav class="nav-right">
-                <a href="#"><i class="fas fa-search"></i></a>
-                <a href="#"><spam>Infantil</spam></a>
-                <a href="#"><i class="fas fa-bell"></i></a>
-                <a id="avatar" href="#"><i class="fas fa-user-astronaut"></i> <i class="fas fa-sort-down"></i></a>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <div class="main-film">
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Netflix</title>
+        <link rel="stylesheet" href="assets/style/reset.css" />
+        <link rel="stylesheet" href="assets/style/styles.css" />
+        <link rel="stylesheet" href="assets/style/responsive.css" />
+    </head>
+    <body>
+        <header>
             <div class="container">
-                <h3 class="title">House of Cards</h3>
-                <p class="description">
-                    O congressista Francis Underwood e sua mulher, Claire, fazem de tudo para conquistar seus objetivos, não importa o que aconteça. Um mundo político recheado de ganância, corrupção e luxúria na capital Washington.
-                </p>
+                <h2 class="logo">NETFLIX</h2>
+                <nav class="nav-left">
+                    <a href="#">Início</a>
+                    <a href="#">Séries</a>
+                    <a href="#">Filmes</a>
+                    <a href="#">Bombando</a>
+                    <a href="#">Minha Lista</a>
+                </nav>
+                <nav class="nav-right">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                    <a href="#"><spam>Infantil</spam></a>
+                    <a href="#"><i class="fas fa-bell"></i></a>
+                    <a id="avatar" href="#"
+                        ><i class="fas fa-user-astronaut"></i>
+                        <i class="fas fa-sort-down"></i
+                    ></a>
+                </nav>
             </div>
-            <div class="buttons">
-                <button role="button" class="watch-btn"><i class="fas fa-play"></i> Assistir</button>
-                <button role="button" class="info-btn"><i class="fas fa-info-circle"></i> Mais Informações</button>
-            </div>
-        </div>
+        </header>
 
-        <div class="suggested-films">
-            <!-- <h4 class="suggest-title">Em Alta</h4> -->
-            <div class="film-box">
-                <img class="thumb" src="assets/img/mini1.jpg">
+        <main>
+            <div class="main-film">
+                <div class="container">
+                    <h3 class="title">House of Cards</h3>
+                    <p class="description">
+                        O congressista Francis Underwood e sua mulher, Claire,
+                        fazem de tudo para conquistar seus objetivos, não
+                        importa o que aconteça. Um mundo político recheado de
+                        ganância, corrupção e luxúria na capital Washington.
+                    </p>
+                </div>
+                <div class="buttons">
+                    <button role="button" class="watch-btn">
+                        <i class="fas fa-play"></i> Assistir
+                    </button>
+                    <button role="button" class="info-btn">
+                        <i class="fas fa-info-circle"></i> Mais Informações
+                    </button>
+                </div>
             </div>
-            <div class="film-box">
-                <img class="thumb" src="assets/img/mini2.jpg">
-            </div>
-            <div class="film-box">
-                <img class="thumb" src="assets/img/mini3.jpg">
-            </div>
-            <div class="film-box">
-                <img class="thumb" src="assets/img/mini4.jpg">
-            </div>
-            <div class="film-box">
-                <img class="thumb" src="assets/img/mini5.jpg">
-            </div>
-            <div class="film-box">
-                <img class="thumb" src="assets/img/mini6.jpg">
-            </div>
-            <div class="film-box">
-                <img class="thumb" src="assets/img/mini7.jpg">
-            </div>
-            <div class="film-box">
-                <img class="thumb" src="assets/img/mini8.jpg">
-            </div>
-            <div class="film-box">
-                <img class="thumb" src="assets/img/mini9.jpg">
-            </div>
-            <div class="film-box">
-                <img class="thumb" src="assets/img/mini10.jpg">
-            </div>
-            <div class="film-box">
-                <img class="thumb" src="assets/img/mini11.jpg">
-            </div>
-            <div class="film-box">
-                <img class="thumb" src="assets/img/mini12.jpg">
-            </div>
-            <div class="film-box">
-                <img class="thumb" src="assets/img/mini13.jpg">
-            </div>
-            <div class="film-box">
-                <img class="thumb" src="assets/img/mini14.jpg">
-            </div>
-        </div>
-    </main>
 
-    <script src="https://kit.fontawesome.com/1ac222eb33.js" crossorigin="anonymous"></script>
-    <script src="assets/js/scripts.js"></script>
-</body>
+            <div class="suggested-films">
+                <h4 class="suggest-title">Em Alta</h4>
+                <section id="section1">
+                    <a href="#section3" class="arrow__btn left-arrow"
+                        ><i class="fas fa-chevron-left"></i
+                    ></a>
+                    <div class="film-box">
+                        <img class="thumb" src="assets/img/mini1.jpg" />
+                    </div>
+                    <div class="film-box">
+                        <img class="thumb" src="assets/img/mini2.jpg" />
+                    </div>
+                    <div class="film-box">
+                        <img class="thumb" src="assets/img/mini3.jpg" />
+                    </div>
+                    <div class="film-box">
+                        <img class="thumb" src="assets/img/mini4.jpg" />
+                    </div>
+                    <div class="film-box">
+                        <img class="thumb" src="assets/img/mini5.jpg" />
+                    </div>
+                    <a href="#section2" class="arrow__btn right-arrow"
+                        ><i class="fas fa-chevron-right"></i
+                    ></a>
+                </section>
+                <section id="section2">
+                    <a href="#section1" class="arrow__btn left-arrow"
+                        ><i class="fas fa-chevron-left"></i
+                    ></a>
+                    <div class="film-box">
+                        <img class="thumb" src="assets/img/mini6.jpg" />
+                    </div>
+                    <div class="film-box">
+                        <img class="thumb" src="assets/img/mini7.jpg" />
+                    </div>
+                    <div class="film-box">
+                        <img class="thumb" src="assets/img/mini8.jpg" />
+                    </div>
+                    <div class="film-box">
+                        <img class="thumb" src="assets/img/mini9.jpg" />
+                    </div>
+                    <div class="film-box">
+                        <img class="thumb" src="assets/img/mini10.jpg" />
+                    </div>
+                    <a href="#section3" class="arrow__btn right-arrow"
+                        ><i class="fas fa-chevron-right"></i
+                    ></a>
+                </section>
+                <section id="section3">
+                    <a href="#section2" class="arrow__btn left-arrow"
+                        ><i class="fas fa-chevron-left"></i
+                    ></a>
+                    <div class="film-box">
+                        <img class="thumb" src="assets/img/mini11.jpg" />
+                    </div>
+                    <div class="film-box">
+                        <img class="thumb" src="assets/img/mini12.jpg" />
+                    </div>
+                    <div class="film-box">
+                        <img class="thumb" src="assets/img/mini13.jpg" />
+                    </div>
+                    <div class="film-box">
+                        <img class="thumb" src="assets/img/mini14.jpg" />
+                    </div>
+                    <div class="film-box">
+                        <img class="thumb" src="assets/img/mini15.jpg" />
+                    </div>
+                    <a href="#section1" class="arrow__btn right-arrow"
+                        ><i class="fas fa-chevron-right"></i
+                    ></a>
+                </section>
+            </div>
+        </main>
+
+        <script
+            src="https://kit.fontawesome.com/1ac222eb33.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="assets/js/scripts.js"></script>
+    </body>
 </html>
